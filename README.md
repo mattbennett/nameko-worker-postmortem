@@ -1,0 +1,1 @@
+# nameko-worker-postmortem
