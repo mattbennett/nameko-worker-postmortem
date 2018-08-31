@@ -1,0 +1,33 @@
+sudo: false
+language: python
+
+install:
+  - pip install tox
+
+matrix:
+  include:
+    - stage: test
+      python: 2.7
+      env: TOX_ENV=py27-test
+    - stage: test
+      python: 3.4
+      env: TOX_ENV=py34-test
+    - stage: test
+      python: 3.5
+      env: TOX_ENV=py35-test
+    - stage: test
+      python: 3.6
+      env: TOX_ENV=py36-test
+    - stage: deploy
+      script: skip
+      deploy:
+        provider: pypi
+        user: mattbennett
+        password:
+          secure: "Y9ESrc3Vmqh5r/OkXdgUX0L+StoI/I8XYj2u5qUG2HJjAMaewR89UlUqwkvQBKn3SXmWOjMfQKHyMsFKKddxYVbten/2piB/rhLK+DcHwGostrlbgfm/AFCMbUGyjWeAfRL+BMnAWczo+rrg9nqIzipVoDZRCf6D6s4MI4uRLcGUkNPt/P6Ita4+EbflxT7i803cAG3D5MbDpgjreEWInZGE++uv28msQVDPRPDBd+HquZNjxKP4S+yanpAlqK4ihl0kbuNT/IF/pYLysMtLWXLz51/9cCWSUFQIlKgrN0mjPf7JjopcY6i2j6zOPARy9QNSfIHfgh6gwnre7rMWC2ZDCumFGQ+aVWKPQElUOmfP4agUZU9zgHmR/ri8ZYitSpew7ZgPDw73TuT2Al0mDzwytgGGUs2R0h427U/TddOqVUf1fUPkX6u0sBx9pQC7RZw0joZlP9hgbHVe9Uy5exgr4ou3NTwAVhP0asSdGU66x8qFMKDS3eIM6stAB417w2unV1QjM7zSRiy3DVLKdghRB1WPgxFglHOmol8knO7mbx2s+PliJaDhl6xvwue88XbqO4sT+3HNSp+yBZkItfsX2c2/7L6/VrtS1N5tE4OdzUBb4nFm3mydfhUaSfPirwIz12fQ1lotVVuAC40xCZhXh8M9ptjsba2TvhyBtD0="        on:
+        tags: true
+        repo: mattbennett/nameko-worker-postmortem
+        distributions: "sdist bdist_wheel"
+
+script:
+  - tox -e $TOX_ENV
