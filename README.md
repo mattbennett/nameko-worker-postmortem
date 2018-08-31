@@ -118,5 +118,7 @@ test.py [1] > /private/tmp/test.py(14)resource()
 
 ### TODO
 
+* Fix coverage collection
+* Add pre-commit hooks
 * Automatically disable capturing so you don't have to specify `-s` every time
 * Attempt to make navigation `up` and `down` the stack trace work as they would with a `pdb.set_trace()` (at the moment, `up` doesn't take you up the stack but into the `nameko-worker-postmortem` code that inserts the breakpoint.)

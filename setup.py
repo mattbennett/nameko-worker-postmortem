@@ -22,6 +22,11 @@ setup(
         "nameko",
         "pytest"
     ],
+    extras_require={
+        'dev': [
+            "coverage==4.4.1"
+        ]
+    },
     entry_points={
         'pytest11': [
             'nameko_worker_postmortem=nameko_worker_postmortem'
