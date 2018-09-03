@@ -25,6 +25,8 @@ matrix:
         user: mattbennett
         password:
           secure: "scypMcW0eNG19DSOhB86IctUIipiUoIXmT9OyapuleOLv7+4d2xmdQI4pxdJ7EjtoUwFhFipgOXSu16RXyIEQkJjnmqlQD+bb8wtFhiC/r3AIeujBmXIDJUtmVTZW3RWU/vxzNfsXf1DJ9K9sg5wvwVx+9+yPzb0QaqqdDYBJ4JySO64YqM/vjchzln1pAzAezeF3efkkU3iAsNacvMdaW1S8tWf8WeOjO4W1Z0vQVqsdw2mri0fJHi+15sVYfIBlWMkGLTYcTUMSfH9nBeW8h5psy2LMqueMtCUUCTS9K+2zHw3ULAu3QyvLszW8RsXACjqO/mobSIP7Qetuz5dtYJwGh6GFej6aKrnqcueliCjRk60Di6Fqwu4TwRVfuJoRUeQ78WPoFYGu/785p5HQdqpAA5xCg81PjI2jlC0S/7CKvA/DqUuCrwy8t9PBLlp0zvPepgI1Sv3UiO1L7fiXmyU00HIZy8dg64XGAu1MhCONQ/batOBjoEwqh6CzydmboyM2ohijuJzdhWkVBIBRWmwRldSIgGQCTATOlACnrvBNFBkU2K42DLUtQ4hsGxR69x7xnW1H4d59mw8SCXyOutE8zZiSK9RnBVbYP2E4E1SxNIl8ci1uDy4v9TJHPueAnQDcWndsxUq88Xg2luWL+KIbPkX02SyjEE4p50Pqb4="
+        on:
+          tags: true
         repo: mattbennett/nameko-worker-postmortem
         distributions: "sdist bdist_wheel"
 
