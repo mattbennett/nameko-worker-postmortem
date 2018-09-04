@@ -12,7 +12,7 @@ with open(os.path.join(here, 'README.md'), 'r', 'utf-8') as handle:
 
 setup(
     name='nameko_worker_postmortem',
-    version='0.0.1',
+    version='0.0.3',
     description='Drop into PDB post mortem on Nameko worker exceptions',
     long_description=readme,
     author='mattbennett',
