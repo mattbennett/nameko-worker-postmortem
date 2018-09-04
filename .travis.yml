@@ -22,9 +22,10 @@ matrix:
       script: skip
       deploy:
         provider: pypi
+        server: https://test.pypi.org/legacy/
         user: mattbennett
         password:
-          secure: "scypMcW0eNG19DSOhB86IctUIipiUoIXmT9OyapuleOLv7+4d2xmdQI4pxdJ7EjtoUwFhFipgOXSu16RXyIEQkJjnmqlQD+bb8wtFhiC/r3AIeujBmXIDJUtmVTZW3RWU/vxzNfsXf1DJ9K9sg5wvwVx+9+yPzb0QaqqdDYBJ4JySO64YqM/vjchzln1pAzAezeF3efkkU3iAsNacvMdaW1S8tWf8WeOjO4W1Z0vQVqsdw2mri0fJHi+15sVYfIBlWMkGLTYcTUMSfH9nBeW8h5psy2LMqueMtCUUCTS9K+2zHw3ULAu3QyvLszW8RsXACjqO/mobSIP7Qetuz5dtYJwGh6GFej6aKrnqcueliCjRk60Di6Fqwu4TwRVfuJoRUeQ78WPoFYGu/785p5HQdqpAA5xCg81PjI2jlC0S/7CKvA/DqUuCrwy8t9PBLlp0zvPepgI1Sv3UiO1L7fiXmyU00HIZy8dg64XGAu1MhCONQ/batOBjoEwqh6CzydmboyM2ohijuJzdhWkVBIBRWmwRldSIgGQCTATOlACnrvBNFBkU2K42DLUtQ4hsGxR69x7xnW1H4d59mw8SCXyOutE8zZiSK9RnBVbYP2E4E1SxNIl8ci1uDy4v9TJHPueAnQDcWndsxUq88Xg2luWL+KIbPkX02SyjEE4p50Pqb4="
+          secure: "LhN2C1/JTv4mjwq1SislnS1ikcd7NT1k6gefxunBM4t2L+TOSTzXWMXD1aDpq8DHRHCGs3/z2hNywYn8T3Du92VAuqzT+PjJnzPX+p+U3dFdaGQJD4GPiFws6/Wa4XMejFqhK9V+YHaJRqDxSUfWVsRSssd5XdmpJsgVdasCVkesJT9FroD2bLhHvtHNT8yXBAT0wX6TJHMmBYmfMmXd7uXX/dHvo5oYA6sr59p3qQT6dp5uNZ2S/z8IHrWIryY0/g2+HJl1+PL2EowOTNWRA9R5MY0e2yvrSv1V8fpAFMBN8gVPa20fGyRsk6eyWPwjg+Iv9vlZ2zc0kbwyDkOPqOAgHtqUe7LPpGnIAoEfu86nOl8ZT05n49Td3U9cGGoBuJlfpliqv9BWyQuQkntqHcwpSCnra7lfDBdiEzYiL9LzDjTeFbe7LVQqPK8SclGded3aD5TQF8LCQ0k5lbhxC0oygrqAGOQhF4XU7ZUkCK9BisPml3E1H15yYhUF4DfkeNSJH73SfDaQI6oQDWQ9fh+9ooNoBGzeEiXTpuZdeO8GIlQ0yHVRXxRv9laO4nhq1l2k0alrjHUuYKdmExM0qeW8pVK6/qcuwDbrdndeJr1AdGTqwVoH7IVstNemN+vu2JIaSQSlAQWQGFuX6a6hCAiL1/ywG6K6Ub5r8xTcE1k="
         on:
           tags: true
         repo: mattbennett/nameko-worker-postmortem
